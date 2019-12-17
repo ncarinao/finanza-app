@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_001230) do
     t.string "id_pago"
     t.string "moneda"
     t.string "monto_total"
+    t.string "total_descuentos"
     t.string "total_con_descuentos"
     t.integer "cliente_id"
     t.datetime "created_at", precision: 6, null: false
@@ -29,6 +30,11 @@ ActiveRecord::Schema.define(version: 2019_12_10_001230) do
     t.string "firstname"
     t.string "lastname"
     t.string "codigo"
+    t.string "job"
+    t.string "country"
+    t.string "address"
+    t.string "zip_code"
+    t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -47,6 +53,7 @@ ActiveRecord::Schema.define(version: 2019_12_10_001230) do
   create_table "footers", force: :cascade do |t|
     t.string "tipo_de_registro"
     t.string "fecha_de_pago"
+    t.string "cliente_codigo"
     t.integer "cliente_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

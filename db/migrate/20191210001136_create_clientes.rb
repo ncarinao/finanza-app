@@ -5,6 +5,12 @@ class CreateClientes < ActiveRecord::Migration[6.0]
       t.string :firstname
       t.string :lastname
       t.string :codigo
+      t.string :job
+      t.string :country
+      t.string :address
+      t.string :zip_code
+      t.string :phone
+
       t.timestamps
     end
   end

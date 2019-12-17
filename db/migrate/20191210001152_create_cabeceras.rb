@@ -5,6 +5,7 @@ class CreateCabeceras < ActiveRecord::Migration[6.0]
       t.string :id_pago
       t.string :moneda
       t.string :monto_total
+      t.string :total_descuentos
       t.string :total_con_descuentos
       t.references :cliente
       t.timestamps
