@@ -16,7 +16,7 @@
 set :environment, "development"
 set :output, "log/cron.log"
 
-every 1.minutes do
+every 5.minutes do
   runner "Cliente.insertToDB"
 end
 
